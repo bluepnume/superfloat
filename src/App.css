@@ -1,3 +1,8 @@
+html, body {
+  padding: 20px;
+  background: lightgrey;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.overflow-box {
+  width: 150px;
+  height: 150px;
+  background: lightblue;
+  overflow: hidden;
+  margin: 20px;
+  padding: 20px;
+}
+
+.dropdown-container {
+  position: relative;
+  text-align: left;
+}
+
+.dropdown-container button {
+  display: inline-block;
+}
+
+.dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown li {
+  list-style: none;
+  text-align: left;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid #ccc;
 }
