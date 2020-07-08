@@ -1,6 +1,7 @@
 html, body {
   padding: 20px;
   background: lightgrey;
+  height: 2000px;
 }
 
 .App {

@@ -28,6 +28,7 @@ class SuperFloat extends Component {
       
       const resizeObserver = new ResizeObserver(onResize);
       resizeObserver.observe(ref);
+      window.addEventListener('scroll', onResize);
       onResize();
     }
 
@@ -47,6 +48,7 @@ class SuperFloat extends Component {
       
       const resizeObserver = new ResizeObserver(onResize);
       resizeObserver.observe(ref);
+      window.addEventListener('scroll', onResize);
       onResize();
     }
   }
@@ -64,8 +66,6 @@ class SuperFloat extends Component {
       top: `${ this.state.top }px`,
       left: `${ this.state.left }px`
     };
-
-    console.warn(portalStyle);
 
     const portal = (
       <div style={ placeholderStyle } ref={ this.placeholderRef }>
